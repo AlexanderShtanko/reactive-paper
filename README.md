@@ -8,41 +8,41 @@ Paper is a fast NoSQL data storage for Android that lets you save/restore Java/K
 
 ### Add dependency
 ```groovy
-compile 'com.alexandershtanko.reactivepaper:reactivepaper:1.0'
+compile 'com.alexandershtanko.reactivepaper:reactive-paper:1.0.0'
 ```
 
 
 ### Get instance
 
-```java
-rxPaper = RxPaper.getInstance();
+```
+RxPaper.getInstance()
 ```
 
 ###  Initialize Reactive Paper
-```java
+```
 rxPaper.init(context)
 ```
 
 ###  Destroy
-```java
+```
 rxPaper.destroy(context)
 ```
 
 ###  Read
 
 How to get Observable for Item with bookName and key:
-```java
+```
 rxPaper.read(String bookName, String key)
 ```
 
 
 How to get Observable for Map of items with bookName:
-```java
+```
 rxPaper.read(String bookName, boolean cached)
 ```
 
 How to get value:
-```java
+```
 rxPaper.readOnce(String bookName, boolean cached)
 rxPaper.readOnce(String bookName, String key, boolean cached)
 ```
@@ -50,18 +50,18 @@ rxPaper.readOnce(String bookName, String key, boolean cached)
 ###  Write
 
 How to write item:
-```java
+```
 rxPaper.write(String bookName, String key, T object, boolean cached)
 ```
 
 How to write map of items:
-```java
+```
 rxPaper.write(String bookName, Map<String, T> objectMap, boolean cached)
 ```
 
 ###  Delete
 
-```java
+```
 rxPaper.delete(String bookName, String key)
 rxPaper.delete(String bookName)
 ```
@@ -69,12 +69,12 @@ rxPaper.delete(String bookName)
 ###  Lazy Loading
 
 How to get lazy objects with bookName:
-```java
+```
 rxPaper.readLazy(String bookName)
 ```
 
 How to async load object with result in Main Thread:
-```java
+```
 lazyObject.getObjectAsync(Action1<RxPaper.PaperObject<T>> action)
 ```
 

@@ -1,4 +1,6 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.neenbedankt.android-apt'
+apply plugin: 'me.tatarka.retrolambda'
 
 android {
     compileSdkVersion 25
@@ -36,7 +38,7 @@ ext {
 
     publishedGroupId = 'com.alexandershtanko.reactivepaper'
     libraryName = 'Reactive Paper'
-    artifact = 'reactivepaper'     // Has to be same as your library module name
+    artifact = 'reactive-paper'     // Has to be same as your library module name
 
     libraryDescription = 'RxJava Wrapper for Paper'
     // Your github repo link
