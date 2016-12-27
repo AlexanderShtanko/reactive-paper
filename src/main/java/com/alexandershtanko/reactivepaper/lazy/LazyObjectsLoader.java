@@ -16,7 +16,6 @@ import rx.subjects.BehaviorSubject;
 /**
  * @author Alexander Shtanko ab.shtanko@gmail.com
  *         Created on 19/10/2016.
- *         Copyright Ostrovok.ru
  */
 
 public abstract class LazyObjectsLoader {

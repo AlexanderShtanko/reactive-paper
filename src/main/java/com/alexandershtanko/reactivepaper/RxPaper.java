@@ -22,8 +22,9 @@ import rx.schedulers.Schedulers;
 import rx.subjects.PublishSubject;
 
 /**
- * Created by alexander on 05/07/16.
- */
+ * @author Alexander Shtanko ab.shtanko@gmail.com
+ *         Created on 19/10/2016.
+ **/
 public class RxPaper {
     private static final String TAG = RxPaper.class.getSimpleName();
     private static RxPaper instance;

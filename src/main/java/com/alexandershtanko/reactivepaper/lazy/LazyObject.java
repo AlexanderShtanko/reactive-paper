@@ -8,7 +8,6 @@ import rx.functions.Action1;
 /**
  * @author Alexander Shtanko ab.shtanko@gmail.com
  *         Created on 19/10/2016.
- *         Copyright Ostrovok.ru
  */
 
 public class LazyObject<T> {
