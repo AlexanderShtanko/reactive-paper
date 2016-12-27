@@ -7,6 +7,19 @@ Paper is a fast NoSQL data storage for Android that lets you save/restore Java/K
 ## How to use:
 
 ### Add dependency
+
+Add to repositories:
+```groovy
+
+repositories {
+    maven {
+        url  "http://jcenter.bintray.com"
+    }
+}
+```
+
+
+Add to dependencies:
 ```groovy
 compile 'com.alexandershtanko.reactivepaper:reactive-paper:1.0.0'
 ```
